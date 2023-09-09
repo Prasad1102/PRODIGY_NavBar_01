@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Responsive NavBar</title>
+</head>
+
+<body class="body">
+
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active">Home</a>
+		<a class="space"></a>
+		<div class="dropdown">
+			<button class="dropbtn">Bikes
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">BMW S100RR</a>
+				<a href="#">Kwasaki Ninja ZX10r</a>
+				<a href="#">Kawasaki Ninja H2</a>
+				<a href="#">Royal Enfield Interceptor 650</a>
+				<a href="#">Ducati Panigale V4</a>
+				<a href="#">Honda CBR1000RR-R</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Scooter
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Honda Activa 6G</a>
+				<a href="#">Suzuki Access 125</a>
+				<a href="#">TVS NTORQ 125</a>
+				<a href="#">TVS Jupiter 125</a>
+				<a href="#">Yamaha Aerox 155</a>
+				<a href="#">Yamaha RayZR 125 Fi Hybrid</a>
+			</div>
+		</div>
+
+
+		<div class="dropdown">
+			<button class="dropbtn">Electric Zone
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Revolt RV400</a>
+				<a href="#">Ultraviolette F77</a>
+				<a href="#">Tork Kratos</a>
+				<a href="#">Odysse Electric Evoqis</a>
+				<a href="#">Kabira Mobility KM 3000</a>
+				<a href="#">Ola S1 Pro</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Ascessories
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#">Mirrors</a>
+				<a href="#">Alloys</a>
+				<a href="#">Battry</a>
+				<a href="#">Bike Pillion Holding</a>
+				<a href="#">White TIMING PAD KTM</a>
+				<a href="#">Bike Side Stand Guard</a>
+				<a href="#">Metal 3 Rod Air Fly Leg Guard</a>
+				<a href="#">Black Seat Kunda Pleasure Side Seat Handle</a>
+				<a href="#">Honda Leg Gaurd</a>
+				<a href="#">Hero Black Jall</a>
+				<a href="#">HERO NEW ZMR INDICATOR</a>
+				<a href="#">Yamaha FZ Bike Front Footrest</a>
+			</div>
+		</div>
+
+		<a href="#about">About</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		<!-- &#9776; code for 3 line (☰ ) in navbar and thefunction for minimze and maximize the nave bar when size reduced -->
+	</div>
+
+	<main>
+		<section class="firstSection">
+			<div class="leftSection">
+				<div class="bigName">Kawasaki Ninja 
+					<span class="zx10r">zx10r</span> 
+				</div>
+				<div class="details">
+					<div class="detail1">Torque : <span class="torque">114.9 Nm @ 11400 rpm</span></div>
+					<div class="detail1">Ground Clearance : <span class="torque">135mm</span></div>
+					<div class="detail1">Engine Displ. : <span class="torque">998 cc</span></div>
+					<div class="detail1">ABS : <span class="torque">Dual Channel</span></div>
+					<div class="detail1">No Of Cylinders : <span class="torque">4 Cylinders</span></div>
+					<div class="detail1">Transmission : <span class="torque">6 Speed Manual</span></div>
+				</div>
+				<button class="btn info">More Info  &#8594;</button>
+			</div>
+			<div class="rightSection">
+				<img src="pxfuel.jpg" alt="" />
+			</div>
+		</section>
+	</main>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
